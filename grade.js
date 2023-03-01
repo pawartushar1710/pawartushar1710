@@ -1,39 +1,29 @@
 
+// grading system
 
-function printGradingsystem(score){
+function grade(score){
 
-    if(score>=90){
-        console.log("A");
-    }else if(score>80 && score<89){
-        console.log("B");
-    }else if(score>59 && score<80)
-    console.log("C");
-     else if(score>33 && score<59){
-        console.log("D");
+if(score>=90){
+    console.log("+A");
 
-     }else if(score<33){
-        console.log("F")
-     }
+}else if(score<=89 && score>=80){
+    console.log("+B");
 
-    }
-      
-printGradingsystem(95);
-printGradingsystem(81);
-printGradingsystem(79.8);
-printGradingsystem(37);
-printGradingsystem(25);
+}else if(score<=79 && score>=60){
+    console.log("+C");
 
+}else if(score<=59 && score>=33){
+    console.log("+D");
 
+}else{
+    console.log("-F");
+}
 
-
-//  function nameoffunction( parameter){
-
-
-
-//  }
-
-
-
-
-
-
+}
+ grade(90);
+ grade(89);
+ grade(79);
+ grade(59);
+ grade(39);
+ grade(33);
+ grade(28);
